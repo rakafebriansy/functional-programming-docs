@@ -1,4 +1,4 @@
-![image](https://github.com/user-attachments/assets/db55c3f1-e65d-4957-91c7-b75a75c1829a)# Functional Programming
+# Functional Programming
 
 Functional programming (FP) adalah paradigma pemrograman yang berfokus pada penggunaan fungsi sebagai unit dasar untuk membangun program.
 Prinsip-prinsip dalam FP:
