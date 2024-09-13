@@ -51,3 +51,54 @@ increment();
 increment();
 console.log(count); //berubah
 ```
+
+## 2. Function as First-Class Citizen
+Function as First-Class Citizen berarti fungsi memiliki hak yang sama seperti tipe data lain. Fungsi dapat disimpan dalam variabel, dikirim sebagai argumen, di-return dari fungsi lain, dan diperlakukan sebagai objek yang dapat dimanipulasi.
+
+### Disimpan dalam variabel
+Fungsi dapat disimpan dalam variabel, seperti halnya nilai lain.
+```js
+const greet = function(name) {
+  return `Hello, ${name}`;
+};
+```
+
+### Diteruskan sebagai argumen ke fungsi lain
+Fungsi dapat dikirim sebagai parameter ke fungsi lain, memungkinkan fungsi tersebut untuk digunakan di dalam fungsi yang menerima.
+```js
+const greet = function(name) {
+  console.log(`Hello, ${name}`);
+};
+
+function callFunctionTwice(func, argument) {
+  func(argument);
+  func(argument);
+}
+
+callFunctionTwice(greet, 'Bashori');
+```
+
+### Dikembalikan dari fungsi lain
+Fungsi juga dapat dikembalikan sebagai hasil dari fungsi lain. Ini disebut higher-order function.
+```js
+function createMultiplier(factor) {
+  return function(number) {
+    return number * factor;
+  };
+}
+
+const double = createMultiplier(2);
+console.log(double(5));
+```
+
+### Dapat disimpan dalam struktur data
+Fungsi juga bisa disimpan dalam struktur data seperti array atau objek.
+```js
+const functions = [
+  function(a) { return a + 1; },
+  function(a) { return a * 2; }
+];
+
+console.log(functions[0](5));
+console.log(functions[1](9));
+```
