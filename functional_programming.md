@@ -18,9 +18,12 @@ function tambah(a, b) {
 Fungsi di atas adalah deterministik karena untuk setiap input (a, b) yang sama, hasilnya selalu sama. Misalnya, add(2, 3) akan selalu menghasilkan 5, kapan pun atau di mana pun fungsi ini dipanggil.
 
 #### Contoh Non-Deterministik
+```js
 function getRandomNumber(min, max) {
   return Math.random() * (max - min) + min;
 }
+```
+
 Fungsi di atas non-deterministik karena hasilnya tidak dapat diprediksi. Setiap kali dipanggil, Math.random(min, max) akan menghasilkan angka yang berbeda, meskipun inputnya sama.
 
 ### Tanpa Efek Samping
