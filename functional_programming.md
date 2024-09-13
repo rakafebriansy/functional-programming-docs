@@ -102,3 +102,18 @@ const functions = [
 console.log(functions[0](5));
 console.log(functions[1](9));
 ```
+
+## 3. Immutability
+Immutability dalam FP berarti bahwa data tidak dapat diubah setelah dibuat. Dengan kata lain, begitu sebuah nilai atau objek diciptakan, ia tetap sama dan tidak dapat dimodifikasi. Jika diperlukan perubahan, FP menggunakan pendekatan membuat salinan baru dari data dengan perubahan yang diinginkan, alih-alih mengubah data asli.
+
+#### Contoh Immutability
+```js
+const numbers = [1, 2, 3];
+
+// NO: mengubah array asli
+// YES: membuat array baru
+const newNumbers = [...numbers, 4];
+
+console.log(numbers);
+console.log(newNumbers);
+```
