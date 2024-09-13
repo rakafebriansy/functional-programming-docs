@@ -160,8 +160,11 @@ function countLength(arr) {
 console.log(countLength([1, 2, 3, 4]));
 ```
 
+### Manfaat
+
+
 ## 6. Function Composition
-Function Composition dalam FP adalah teknik menggabungkan dua atau lebih fungsi untuk membentuk fungsi baru yang hasilnya adalah aliran data dari satu fungsi ke fungsi berikutnya. Tujuan dari komposisi fungsi adalah mempermudah pemrosesan data secara modular dan deklaratif, sehingga fungsi-fungsi kecil dapat digabungkan untuk menyelesaikan masalah yang lebih besar.
+Function Composition dalam FP adalah teknik menggabungkan dua atau lebih fungsi untuk membentuk fungsi baru yang hasilnya adalah aliran data dari satu fungsi ke fungsi berikutnya.
 
 #### Contoh Function Composition dalam FP
 ```js
