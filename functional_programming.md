@@ -117,3 +117,29 @@ const newNumbers = [...numbers, 4];
 console.log(numbers);
 console.log(newNumbers);
 ```
+
+## 4. Declarative Programming
+Dalam FP, declarative programming berarti menulis kode yang berfokus pada apa yang ingin dicapai, bukan bagaimana cara mencapainya secara rinci. Ini berbeda dengan imperative programming, di mana Anda harus menentukan langkah-langkah eksplisit untuk menyelesaikan suatu tugas.
+
+#### Contoh Declarative Programming dalam FP
+```js
+const numbers = [1, 2, 3, 4, 5, 6];
+
+const evenNumbers = numbers.filter(n => n % 2 === 0);
+
+console.log(evenNumbers);
+```
+
+#### Contoh Filtering Dalam Imperative Programming
+```js
+const numbers = [1, 2, 3, 4, 5, 6];
+let evenNumbers = [];
+
+for (let i = 0; i < numbers.length; i++) {
+  if (numbers[i] % 2 === 0) {
+    evenNumbers.push(numbers[i]);
+  }
+}
+
+console.log(evenNumbers);
+```
