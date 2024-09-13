@@ -143,3 +143,19 @@ for (let i = 0; i < numbers.length; i++) {
 
 console.log(evenNumbers);
 ```
+
+## 5. Recursion
+Dalam FP, recursion adalah teknik di mana sebuah fungsi memanggil dirinya sendiri untuk menyelesaikan masalah yang lebih besar dengan membaginya menjadi sub-masalah yang lebih kecil. Recursion menggantikan perulangan (loops) yang umum dalam pemrograman imperatif, karena FP sering kali menghindari penggunaan pernyataan iteratif seperti for atau while.
+
+#### Contoh Recursion dalam FP
+```js
+function countLength(arr) {
+  if (arr.length === 0) {
+    return 0;
+  } else {
+    return 1 + countLength(arr.slice(1));
+  }
+}
+
+console.log(countLength([1, 2, 3, 4]));
+```
